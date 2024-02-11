@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.game {
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+
+}
+
+
+.progress-bar,
+.health-bar {
+  width: 100%;
+  border-width: 1px;
+  height: 50px;
+  border-style: solid;
+}
+
+.health-remaining {
+  width: 0;
+  background-color: green;
+  height: 100%;
+}
+
+.game-active {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.game-active * {
+  align-items: center;
+}
+
+.game img,
+.card > img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.buttons {
+  margin: 50px;
+  row-gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.buttons > * {
+  padding: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.game-over {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  column-gap: 50px;
+}
+
+.text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-part * {
+  margin: 50px;
+}
+
+.text-part button {
+  padding: 50px;
+  font-size: large;
+}
+
+.cheers-up {
+  display: flex;
+  justify-content: center;
+}
+.game-over img {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.weapons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.weapons .weapon img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.weapons > * {
+  width: 80px;
+  height: 80px;
+}
+
+.weapon-item {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  transition-duration: 0.15s;
+
+}
+
+.weapon-item:hover {
+  border: 3px solid black;
+  transition-duration: 0.15s;
+}
+
+.weapon-item > .image-wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.weapon-item > .info {
+  width: calc(100% - 100px);
+}
+
+.weapon-item > .image-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.shop {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
